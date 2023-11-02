@@ -1,15 +1,18 @@
-
-
+import PokeLogo from "../assets/PokeDex-02-11-2023.png";
+import "../App.css";
 function Header() {
-    return (
-        <>
-        <div>
-            <h1 className="text-center font-bold text-5xl font-serif text-yellow-200 my-0 py-1">Pokedex</h1>
-            <h2 className="text-center my-6 text-xl  text-rose-500 font-serif">Welcome to the world of pokemons</h2>
-        </div>
-        </>
-        
-    )
+  return (
+    <>
+      <div className="sticky top-0 scroll bg-opacity-80 backdrop-filter backdrop-blur-lg bg-gray-800 sm:flex sm:justify-center border-b-8 border-gray-200">
+        <h1 className="flex items-center justify-center font-bold font-serif sm:m-3">
+          <img src={PokeLogo} alt="PokeLogo" className="w-96" />
+        </h1>
+        <h2 className="flex items-center justify-center text-center sm:text-xl text-white font-mono m-3 sm:w-96">
+          Pokédex Powered by React: The Ultimate Companion!
+        </h2>
+      </div>
+    </>
+  );
 }
 
-export default Header
+export default Header;
