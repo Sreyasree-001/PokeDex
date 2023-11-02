@@ -5,6 +5,7 @@ import Body from "./Components/Body";
 import Footer from "./Components/Footer";
 import "./App.css";
 import Loading from "./Components/Loading/Loading";
+import { Content } from './Components/Content';
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -16,12 +17,13 @@ function App() {
   return (
     <>
       {loading && <Loading />}
-      <div>
+      <div className="bg-gray-500">
         <Header />
-        <Body />
-        {/* <Loader/> */}
-        {/* <Footer /> */}
+        <Content/>
+        {/* <Body /> */}
+        <Footer />
       </div>
+      
     </>
   );
 }
