@@ -35,10 +35,6 @@ export const Content = () => {
             jname={pokemon.name.japanese}
             image={pokemon.image.sprite}
             description={pokemon.description}
-            // hp={pokemon.base.hp}
-            // attack={pokemon.base}
-            // defense={pokemon.base.defense}
-            // speed={pokemon.base.speed}
             height={pokemon.profile.height}
             weight={pokemon.profile.weight}
             style={{

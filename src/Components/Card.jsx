@@ -3,7 +3,7 @@ function Card(props) {
   return (
     <div key={props.id}>
       <div
-        className="relative overflow-hidden transition duration-200 transform rounded-2xl bg-opacity-50 hover:-translate-y-2 hover:shadow-2xl"
+        className="relative overflow-hidden transition duration-200 transform rounded-2xl bg-opacity-50 hover:-translate-y-2 hover:shadow-2xl hover:cursor-pointer"
         style={props.style}
       >
         <img
@@ -21,7 +21,7 @@ function Card(props) {
         </div>
         <div className="font-mono absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-80 opacity-0 hover:opacity-100">
           <p className="mb-4 text-lg font-bold text-gray-100">
-            <span>#{props.id}</span> {props.name}{"   "} <span style={props.style} className="p-1 px-4 rounded-full">{props.type}</span>
+            <span>#{props.id}</span> {props.name}{"   "} <span style={props.style} className="p-1 px-4 rounded-full text-black">{props.type}</span>
           </p>
 
           <p className="text-sm text-gray-300">{props.description}</p>
