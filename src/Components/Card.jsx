@@ -3,13 +3,13 @@ function Card(props) {
   
   return (
     <div key={props.id}>
-      <div className="relative overflow-hidden transition duration-200 transform rounded-2xl border-4 border-orange-300 bg-orange-300 bg-opacity-50 hover:-translate-y-2 hover:shadow-2xl">
+      <div className="relative overflow-hidden transition duration-200 transform rounded-2xl bg-opacity-50 hover:-translate-y-2 hover:shadow-2xl" style={props.style}>
         <img
           className="object-contain w-full h-56 md:h-64 xl:h-80"
           src={props.image}
           alt=""
         />
-        <div className="text-center p-4 font-mono bg-orange-300 hover:hidden">
+        <div className="text-center p-4 font-mono hover:hidden bg-opacity-50" style={props.style}>
           {props.name}
           <br />
           {props.jname}
