@@ -15,6 +15,8 @@ export const Content = () => {
     fetchInfo();
   }, []);
 
+  
+
   // const styles = {
   //   backgroundImage: `linear-gradient(${
   //     colorArr[pokemon.type[0].toLowerCase().toString() + "-light"]
@@ -26,14 +28,23 @@ export const Content = () => {
       <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
         {pokemonData.map((pokemon, index) => (
           <Card
+            key={pokemon.id}
+            id={pokemon.id}
+            type={pokemon.type[0]}
             name={pokemon.name.english}
             jname={pokemon.name.japanese}
             image={pokemon.image.sprite}
+            description={pokemon.description}
+            // hp={pokemon.base.hp}
+            // attack={pokemon.base}
+            // defense={pokemon.base.defense}
+            // speed={pokemon.base.speed}
+            height={pokemon.profile.height}
+            weight={pokemon.profile.weight}
             style={{
               backgroundImage: `linear-gradient(${
                 colorArr[pokemon.type[0].toLowerCase().toString() + "-light"]
               }, ${colorArr[pokemon.type[0].toLowerCase()]})`,
-              borderColor: `${colorArr[pokemon.type[0].toLowerCase()]})`
             }}
           />
         ))}
