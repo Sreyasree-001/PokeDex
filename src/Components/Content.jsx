@@ -15,20 +15,12 @@ export const Content = () => {
     fetchInfo();
   }, []);
 
-  
-
-  // const styles = {
-  //   backgroundImage: `linear-gradient(${
-  //     colorArr[pokemon.type[0].toLowerCase().toString() + "-light"]
-  //   }, ${colorArr[pokemon.type[0].toLowerCase()]})`,
-  // };
-
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
         {pokemonData.map((pokemon, index) => (
           <Card
-            key={pokemon.id}
+            key={index}
             id={pokemon.id}
             type={pokemon.type[0]}
             name={pokemon.name.english}
