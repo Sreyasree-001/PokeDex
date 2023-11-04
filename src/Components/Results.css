@@ -1,0 +1,6 @@
+.result-items{
+    padding: 5px;
+}
+.result-items:hover{
+    background-color: rgb(177, 209, 209);
+}
