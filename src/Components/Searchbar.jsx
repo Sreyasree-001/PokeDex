@@ -30,7 +30,7 @@ const handleChange = (value) => {
         <div>
             <div className='flex flex-row bg-white border-8 border-transparent  rounded-lg h-8 pt-0 pl-5 shadow-white space-x-2'>
             <FaSearch/>
-            <input placeholder='Search'
+            <input placeholder='Search The Pokemon'
                 className='border-none max-h-full max-w-full focus:outline-none '
                 value={input}
                 onChange={(e)=> handleChange(e.target.value)}

@@ -5,7 +5,7 @@ import Results from "./Results";
 
 const SearchbarResults = ({ results }) => {
     return (
-        <div className="results">
+        <div className="results absolute translate-y-10 w-60 font-mono z-10">
             {
                 results.map((result, id) => {
                     return (

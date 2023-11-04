@@ -3,7 +3,7 @@ import "../App.css";
 function Header() {
   return (
     <>
-      <div className="z-10 sticky top-0 scroll bg-opacity-80 backdrop-filter backdrop-blur-lg bg-gray-800 sm:flex sm:justify-center border-b-8 border-gray-200">
+      <div className="z-20 sticky top-0 scroll bg-opacity-80 backdrop-filter backdrop-blur-lg bg-gray-800 sm:flex sm:justify-center border-b-8 border-gray-200">
         <h1 className="flex items-center justify-center font-bold font-serif sm:m-3">
           <img src={PokeLogo} alt="PokeLogo" className="w-96" />
         </h1>
