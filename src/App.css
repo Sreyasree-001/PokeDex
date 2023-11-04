@@ -5,7 +5,7 @@
 }
 
 ::-webkit-scrollbar{
-    width: 20px;
+    width: 15px;
 }
 ::-webkit-scrollbar-track{
     background:#272b2e;
@@ -20,6 +20,7 @@
 }
 ::-webkit-scrollbar-button{
     background-color:#1a1c1f ;
+    height:0;
 }
 
 ::-webkit-scrollbar-thumb:hover{
