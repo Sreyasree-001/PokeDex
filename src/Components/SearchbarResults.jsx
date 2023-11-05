@@ -9,7 +9,7 @@ const SearchbarResults = ({ results }) => {
             {
                 results.map((result, id) => {
                     return (
-                        <Results result={result}  key={id}/>
+                        <Results result={result} key={id} />
                     )
                 })
             }

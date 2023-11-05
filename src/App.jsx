@@ -1,4 +1,4 @@
-import React , {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Header from "./Components/Header";
 
@@ -15,6 +15,8 @@ function App() {
 
   const [results, setResults] = useState([]);
 
+  const [value, setValue] = useState("");
+
   useEffect(() => {
     setTimeout(() => setLoading(false), 3000)
   }, [])
@@ -25,14 +27,14 @@ function App() {
       <div className="bg-gray-500">
         <Header />
         <div className="pt-5  w-40 m-auto flex flex-col items-center min-w-20">
-          <Searchbar setResults={setResults} />
-          <SearchbarResults results={results}/>
+          <Searchbar setResults={setResults} setValue={setValue} />
+          <SearchbarResults results={results} />
         </div>
-        <Content/>
+        <Content item={value} />
         {/* <Body /> */}
         <Footer />
       </div>
-      
+
     </>
   );
 }
