@@ -24,7 +24,7 @@ function App() {
   return (
     <>
       {loading && <Loading />}
-      <div className="bg-gray-500">
+      <div className="bg-red-500">
         <Header />
         <div className="pt-5  w-40 m-auto flex flex-col items-center min-w-20">
           <Searchbar setResults={setResults} setValue={setValue} />
