@@ -13,7 +13,7 @@ const Searchbar = ({ setResults, setValue }) => {
             .then((response) => response.json())
             .then((json) => {
                 const results = json.filter((id) => {
-                    return value && id.name && id.name.english.toLowerCase().includes(value);
+                    return value && id.name && id.name.english.toLowerCase().includes(value.toLowerCase());
                 });
 
                 setResults(results);
