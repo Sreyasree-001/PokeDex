@@ -8,7 +8,7 @@ function Header() {
           <img src={PokeLogo} alt="PokeLogo" className="w-96" />
         </h1>
         <h2 className="flex items-center justify-center text-center sm:text-xl text-white font-mono m-3 sm:w-96">
-          Pokédex Powered by React: The Ultimate Companion!
+        Gotta catch 'em all!
         </h2>
       </div>
     </>
